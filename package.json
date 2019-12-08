@@ -4,7 +4,13 @@
   "main": "src/clothes-by-weather.js",
   "author": "Erik Lilja <erikvlilja@gmail.com>",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "jest": "^24.9.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
