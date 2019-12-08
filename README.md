@@ -26,8 +26,8 @@ Many API provide this information in regards to temperature, perhaps we can use 
 An object of strings.
 ```JSON
 {
-    'upperbody': ['jacket|coat|sweater|shirt']
-    'misc': ['umbrella|gloves|hat|warm socks']
+    "upperbody": ["jacket|coat|sweater|shirt"],
+    "misc": ["umbrella|gloves|hat|warm socks"]
 }
 ```
 
