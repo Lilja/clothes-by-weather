@@ -1,0 +1,10 @@
+{
+  "name": "clothes-by-weather",
+  "version": "1.0.0",
+  "main": "src/clothes-by-weather.js",
+  "author": "Erik Lilja <erikvlilja@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^24.9.0"
+  }
+}
