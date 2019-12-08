@@ -41,10 +41,10 @@ function jackets(temperature) {
 }
 
 function baselayer(temperature) {
-    if (temperature > 15) {
-        return 'shirt'
+    if (temperature <= 15) {
+        return 'sweater'
     }
-    return 'sweater'
+    return
 }
 
 function upperbody(temperature, windGust, pop, description) {
@@ -54,7 +54,8 @@ function upperbody(temperature, windGust, pop, description) {
         jackets(temperature),
         baselayer(temperature)
     ].filter(p => typeof p !== 'undefined')
-    return upperbody
+
+    return upperbody.length ? upperbody : ['shirt']
 }
 
 function lowerbody(temperature, windGust) {

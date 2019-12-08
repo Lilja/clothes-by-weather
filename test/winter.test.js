@@ -47,3 +47,20 @@ test("clear winter day", () => {
     }
     expect(cbw(input)).toMatchObject(expected)
 })
+
+test("Barcelona december day", () => {
+    const input = {
+        description: 'Clear',
+        temperature: 15.16,
+        windGust: 3.67,
+        pop: 0
+    }
+
+    const expected = {
+        'upperbody': ['light jacket'],
+        'lowerbody': 'pants',
+        'misc': ['sunglasses'],
+        'shoes':'sneakers'
+    }
+    expect(cbw(input)).toMatchObject(expected)
+})
