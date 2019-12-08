@@ -34,6 +34,9 @@ Feel free to contribute. Take a look under the issues. Perhaps you can adjust th
 ### License
 MIT.
 
+## CI
+Using github actions to lint and test
+
 ## Inputs
 The function expects a few inputs to function properly
 
