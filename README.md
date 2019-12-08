@@ -19,6 +19,16 @@ The wind gust, in m/s
 Many API provide this information in regards to temperature, perhaps we can use it?
 
 ### Humidity
--
+\-
+
+
+## Output
+An object of strings.
+```JSON
+{
+    'upperbody': ['jacket|coat|sweater|shirt']
+    'misc': ['umbrella|gloves|hat|warm socks']
+}
+```
 
 Spawned by this [reddit thread](https://www.reddit.com/r/startpages/comments/e7n16i/temperature_to_clothes_converter/).
