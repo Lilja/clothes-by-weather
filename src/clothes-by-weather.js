@@ -1,5 +1,3 @@
-const log = '👖'
-
 function umbrella(pop, description) {
     if (description.includes('snow')) {
         return
@@ -105,13 +103,32 @@ function shoes(temperature, pop, description) {
 }
 
 function validate(description, temperature, windGust, pop) {
+    if (typeof description !== 'string') {
+        return {'error': 'Description must be a string'}
+    }
+    if (!isNumber(temperature)) {
+        return {'error': 'Temperature is not a number'}
+    }
+    if (!isNumber(windGust)) {
+        return {'error': 'Wind is not a number'}
+    }
+    if (!isNumber(pop)) {
+        return {'error': 'Pop is not a number'}
+    }
     return {'ok': true}
 }
 
+function isNumber(x) {
+    if (x === 0) {
+        return true
+    }
+    return (x/x === 1)
+}
+
 module.exports = function clothesByWeather(
-    {description, temperature, feelsLike, windGust, humidity, pop}
+    {description, temperature, windGust, pop}
 ) {
-    // Assumes all metrics units are celsius,m/s
+    // Assumes all metrics units are celsius, m/s
     let _description = description.toLowerCase()
     const validation = validate(description, temperature, windGust, pop)
     if (!validation.ok) {

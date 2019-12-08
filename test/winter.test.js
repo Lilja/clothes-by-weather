@@ -1,4 +1,3 @@
-const assert = require("assert");
 const cbw = require('../src/clothes-by-weather')
 
 test("Chilly temperature december day", () => {
@@ -33,26 +32,11 @@ test("Partly cloudy vancouver day", () => {
     expect(cbw(input)).toEqual(expected)
 })
 
-test("freezing cloudy december day", () => {
-    const input = {
-        'description': 'Partly Cloudy',
-        'temperature': -23,
-        'feelsLike': -28,
-        'windGust': 2,
-        'humidity': 46
-    }
-    const expected = {
-        'upperbody': ['coat', 'sweater'],
-        'misc': ['gloves', 'hat', 'scarf', 'warm socks']
-    }
-    expect(cbw(input)).toMatchObject(expected)
-})
-
 test("clear winter day", () => {
     const input = {
         'description': 'clear',
         'pop': 0,
-        'windSpeed': 1.73,
+        'windGust': 1.73,
         'temperature': -8.95,
     }
     const expected = {

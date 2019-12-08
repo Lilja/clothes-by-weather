@@ -5,6 +5,8 @@
   "author": "Erik Lilja <erikvlilja@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-plugin-jest": "^23.1.1",
     "jest": "^24.9.0"
   },
   "keywords": [
@@ -25,6 +27,7 @@
   "bugs": "https://github.com/lilja/clothes-by-weather/issues",
   "homepage": "https://github.com/lilja/clothes-by-weather",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "npx eslint src/ test/"
   }
 }

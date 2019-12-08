@@ -1,4 +1,3 @@
-const assert = require("assert");
 const cbw = require('../src/clothes-by-weather')
 
 
